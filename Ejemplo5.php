@@ -55,12 +55,20 @@
         }
 
         $tabla1 = new Tabla(2, 3);
-        $tabla1->cargar(1, 1, "1");
-        $tabla1->cargar(1, 2, "2");
-        $tabla1->cargar(1, 3, "3");
-        $tabla1->cargar(2, 1, "4");
-        $tabla1->cargar(2, 2, "5");
-        $tabla1->cargar(2, 3, "6");
+        $i = 1;
+        for ($f = 1; $f <= 2; $f++) {
+            for ($c = 1; $c <= 3; $c++) {
+                $tabla1->cargar($f, $c, $i);
+                $i++;
+            }
+        }
+
+//        $tabla1->cargar(1, 1, "1");
+//        $tabla1->cargar(1, 2, "2");
+//        $tabla1->cargar(1, 3, "3");
+//        $tabla1->cargar(2, 1, "4");
+//        $tabla1->cargar(2, 2, "5");
+//        $tabla1->cargar(2, 3, "6");
         $tabla1->graficar();
         ?>
     </body>
