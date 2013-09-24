@@ -19,7 +19,7 @@
             }
 
         }
-
+        $prueba = "0";
         $per1 = new Persona();
         $per1->inicializar('Juan');
         $per1->imprimir();
