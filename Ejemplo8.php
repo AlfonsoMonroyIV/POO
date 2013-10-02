@@ -40,6 +40,7 @@
             private function graficarHorizontal() {
                 for ($f = 0; $f < count($this->opciones); $f++) {
                     $this->opciones[$f]->graficar();
+                    echo ' ';
                 }
             }
 
